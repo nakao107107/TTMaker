@@ -1,0 +1,92 @@
+// Place all the styles related to the make controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.semester-select{
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  background-color: #3a3c4c;
+}
+
+.semester-select p{
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+#semester-select{
+  font-size: 1.5rem;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.time-table{
+  width:100%;
+  height:800px;
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+#time-table{
+  margin:0 auto;
+}
+
+#time-table td{
+  width: 100px;
+  height: 80px;
+  border: 1px solid #eee;
+  transition: 0.3s;
+
+}
+
+#time-table td:hover{
+  background-color: #d8d6de;
+}
+
+#time-table .week{
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #eee;
+  background-color: #d2ddf1;
+  color:#fff;
+}
+
+#time-table .period{
+  width: 30px;
+  height: 80px;
+  line-height: 80px;
+  border: 1px solid #eee;
+  background-color: #d2ddf1;
+  color:#fff;
+}
+
+#classeslist{
+  margin:20px auto;
+}
+
+#classeslist tr{
+  transition: 0.3s;
+}
+
+#classeslist td{
+  width: 126px;
+  height: 30px;
+  border: 1px solid #eee;
+  text-align: center;
+  line-height: 30px;
+}
+
+#classeslist tr:hover{
+  background-color: #d8d6de;
+}
+
+#classeslist th{
+  width: 126px;
+  height: 30px;
+  border: 1px solid #eee;
+  text-align: center;
+  line-height: 30px;
+  background-color: #00aceb;
+  color: #fff;
+}

@@ -1,0 +1,101 @@
+<div class="semester-select">
+
+  <p>対象のセメスターを選択してください</p>
+  <select id="semester-select">
+    <option value="1" selected>1年　春,夏</option>
+    <option value="2">1年　秋,冬</option>
+    <option value="3">2年　春,夏</option>
+    <option value="4">2年　秋,冬</option>
+    <option value="5">3年　春,夏</option>
+    <option value="6">3年　秋,冬</option>
+  </select>
+
+</div>
+
+<div class="time-table">
+  <table id="time-table">
+    <tr>
+      <th></th>
+      <th class="week">月</th>
+      <th class="week">火</th>
+      <th class="week">水</th>
+      <th class="week">木</th>
+      <th class="week">金</th>
+      <th class="week">土</th>
+    </tr>
+    <tr>
+      <th class="period">1</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th class="period">2</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th class="period">3</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th class="period">4</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th class="period">5</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th class="period">6</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+
+  <table id="classeslist">
+    <tr>
+      <th>曜日</th>
+      <th>時間割</th>
+      <th>授業名</th>
+      <th>分類</th>
+      <th>単位数</th>
+    </tr>
+    <%@lectures.each do |lecture|%>
+    <tr>
+      <td><%=lecture.day%></td>
+      <td><%=lecture.period%></td>
+      <td><%=lecture.name%></td>
+      <td><%=lecture.group%></td>
+      <td><%=lecture.credit%></td>
+    </tr>
+    <%end%>
+  </table>
+
+</div>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TimeScheduleApp2</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header class="header clearfix">
+        <h1 class="site-title">TTMaker</h1>
+        <nav class="global-nav">
+          <ul>
+            <li class="nav-item"><%=link_to("HOME","/")%>
+            <li class="nav-item"><%=link_to("ABOUT","/")%>
+            <li class="nav-item"><%=link_to("MAKE","/")%>
+          </ul>
+        </nav>
+    </header>
+    <div class="contents">
+      <%= yield %>
+    </div>
+    <footer class="footer">
+    </footer>
+  </body>
+</html>
